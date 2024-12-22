@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    background: url("https://www.psdgraphics.com/file/purple-stars-background.jpg");
+
+}
+
+
+.gift{
+    position: absolute;
+    background: rgb(250, 253, 61);
+    animation: change 5s linear infinite;
+    border: 2px solid rgb(250, 42, 215);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+    top: 50%; /* posiciona na metade da tela */
+    margin-top: -25px; /* e retrocede metade da altura */
+    left: 50%; /* posiciona na metade da tela */
+    margin-left: -100px; /* e retrocede metade da largura */
+
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.gift:hover{
+    transform: scale(1.5);
+}
+
+@keyframes change {
+    0%{
+        background: rgb(250, 253, 61);
+        border: 2px solid rgb(250, 42, 215);
+        left: 50%;
+        top: 52%;
+    }
+    25%{
+        left: 52%;
+        top: 50%;
+        border: 2px solid rgb(243, 156, 228);
+    }
+    50%{
+        background: rgb(235, 236, 149);
+        border: 2px solid rgb(250, 42, 215);
+        left: 50%;
+        top: 52%;
+    }
+    75%{
+        left: 48%;
+        top: 50%;
+        border: 2px solid rgb(243, 156, 228);
+    }
+    100%{
+        background: rgb(250, 253, 61);
+        border: 2px solid rgb(250, 42, 215);
+        left: 50%;
+        top: 52%;
+    }
+}
+
+button{
+    border-radius: 5px;
+    border: none;
+    
+}
